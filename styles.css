@@ -3,6 +3,10 @@
     align-items:right;
 }
 
+.navbar{
+  position: sticky;
+  top:0;
+}
 .name{
     padding-top: 120px;
     display: flex;
@@ -89,3 +93,48 @@ body {
   .progress-bar{
       background-color: #087E8B;
   }
+
+.myname{
+  font-size:80px;font-weight:bold
+}
+.plain_title{
+height: 600px;
+}
+
+.prof-pic{
+  width:80%
+}
+
+.social_links{
+  width:30px;
+}
+
+  /*Responsive */
+@media only screen and (max-width: 600px) {
+  .name{
+    display: flex;
+    width:75%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 30%;
+}   
+
+.myname{
+  font-size:60px;font-weight:bold
+}
+.plain_title{
+  height: 100px;
+  }
+  .prof-pic{
+    width:100%
+  }
+
+  .social_links{
+    width:100%
+  }
+
+  .body{
+    max-width: 100%;
+  }
+}
