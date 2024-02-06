@@ -33,10 +33,6 @@
     max-width:98%;
 }
 
-.about-me{
-    padding-top:18%;
-}
-
 .details{
     color:#999999;
 }
@@ -103,8 +99,16 @@ height: 600px;
 }
 
 .prof-pic{
-  width:80%
+  width:80%;
+  height: fit-content
 }
+
+.skill-pic{
+  width:25%;
+  margin: auto;
+  margin-top: 5%;
+}
+
 
 .social_links{
   width:30px;
