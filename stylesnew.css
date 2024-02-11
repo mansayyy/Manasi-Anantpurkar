@@ -1,0 +1,191 @@
+.nav{
+    background: #ecf0f3;    
+}
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #ecf0f3;
+}
+.descriptions{
+    font-size: 16px; 
+    color: #3c3e41;
+
+}
+.firstsection{
+    display:flexbox;
+    width: 100%;
+    background-color: #ecf0f3;
+    margin:0; 
+    height: 100%;
+    padding-left: 10%;
+}
+.secondsection{
+    display:flexbox;
+    width: 100%;
+    background-color: #ecf0f3;
+    margin:0; 
+    height: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.container{
+    margin: 0;
+    width: 100%;
+}
+.photo{
+    width: 100%;
+    height: 100%;
+}
+
+.definition{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.definitonfirsthalf{
+    margin-bottom: 10%;
+}
+.definitonsecondhalf{
+    width: 70%;
+}
+
+.pink-title{
+    color: #ff004f;
+    font-size: 48px;
+}
+
+#roletext{
+    font-size: 36px;
+    color: #000;
+}
+
+.logo{
+    width: 60%;
+    height: 80%;
+    margin-left: 20%;
+    margin-top: 10%;
+}
+
+.logocard{
+    background-color: #ecf0f3;
+    border: none;
+}
+
+
+.logocard .card{
+    background-color: #ecf0f3;
+    border: none;
+    transition: transform ease 300ms;
+}
+
+.logocard .card:hover{
+    background-color: #ff004f;
+    border: none;
+    transform: translate(0, -10px);
+}
+
+.linebreak{
+    color: grey;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.skilllogo{
+width: 20%;
+margin-top: 10%;
+height: 40%;
+}
+
+.skillcard{
+    padding-left: 10%;
+    padding-bottom: 20%;
+    background: linear-gradient(145deg, #e2e8ec, #ffffff);
+}
+
+.skillcard .skilllogo{
+    margin-bottom: 5%;
+}
+
+.skillcard .skilltitle{
+    margin-bottom: 10%;
+}
+
+.skilllogohovered{
+    display: none;
+    width: 20%;
+    margin-top: 10%;
+    height: 40%;
+}
+.skillcard:hover .skilllogo{
+    display: none;
+    }
+.skillcard:hover .skilllogohovered{
+    display: block;
+    }
+.skillcard:hover{
+background: #ff004f;
+color: #fff;
+-webkit-transition: background 500ms linear;
+    -ms-transition: background 500ms linear;
+    transition: background 500ms linear;
+}
+
+.websitecard{
+    padding: 8%;
+    background: linear-gradient(145deg, #e2e8ec, #ffffff);
+    border-radius: 10%;
+    
+}
+
+.websitecard:hover{
+    color: #ff004f;
+}
+
+.websitecard:hover .websiteimg{
+    transform: scale(1.1);
+}
+.websiteimg{
+    width:100%;
+    border-radius: 10%;
+    margin-bottom: 6%;
+    transition: 0.5s all ease-in-out;
+}
+
+.projectrow{
+    margin-bottom: 3%;
+}
+
+.modal{
+    width: 100%;
+    margin: 0;
+}
+
+.modal-content{
+    background: linear-gradient(145deg, #e2e8ec, #ffffff);
+    padding: 5%;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.modal-dialog{
+    margin: 0;
+    max-width: 100%;
+    min-width: 100%;
+}
+.modal-dialog-centered{
+    width: 100%;
+    margin: 0;
+}
+
+.modal-footer button{
+    background: linear-gradient(145deg, #e2e8ec, #ffffff);
+    border:2px solid #ff004f ;
+    color: #ff004f;
+}
+
+.projecttitle{
+    color: #ff004f;
+}
