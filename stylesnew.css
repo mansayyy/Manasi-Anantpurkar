@@ -13,13 +13,8 @@
   }
 
 
-.navbar-right{
-    display: flex;
-    justify-content:flex-end;
-}
-
 .navbar-brand{
-    max-height: 100%;
+    max-height: 50px;
     min-height: 100%;
     width: 20%;
     padding: 0;
@@ -323,7 +318,6 @@ color: #fff;
     line-height: 34px;
     font-weight: 600;
     color: #1E2125;
-
 }
 
 .close{
@@ -524,7 +518,10 @@ color: #fff;
         border-left: 0;
         left:-20px;
     }
-
+    .contactmelogo{
+        max-width: 70px;
+        max-height: 70px;
+    }
 }
 
 .badge{
@@ -593,4 +590,245 @@ color: #fff;
     color: #3c3e41;
     font-weight: bold;
     font-size: 24px;
+}
+
+/* Dark Mode Styles Start */
+
+.dark-mode{
+    background-color: #212428;
+  }
+
+  .navlink-dark{
+    color: #C4CFDE;
+  }
+
+  .navlink-dark:hover{
+    color:#ff004f;
+  }
+  
+  .firstsection-dark{
+    display:flexbox;
+    width: 100%;
+    background-color: #212428;
+    margin:0; 
+    height: 100%;
+    padding-left: 10%;
+}
+
+.intro-dark{
+    font-size: 48px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+#roletext-dark{
+
+    color: #FFFFFF;
+    font-size: 36px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+.descriptions-dark{
+    font-size: 16px; 
+    color: #C4CFDE;
+    font-family: "Poppins", sans-serif;
+    line-height: 28px;
+}
+
+.logodesctext-dark{
+    color: #ffffff; 
+    font-size:14px;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.secondsection-dark{
+    display:flexbox;
+    width: 100%;
+    background-color: #212428;
+    margin:0; 
+    height: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    z-index: -1;
+}
+
+.sectiontitle-dark{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #C4CFDE;
+    font-size: 48px;
+}
+
+
+
+.skillcard-dark{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 20%;
+    background: linear-gradient(145deg, #1e2024, #23272b);
+}
+.skillcard-dark .skilllogo{
+    margin-bottom: 5%;
+}
+
+.skillcard-dark .skilltitle{
+    margin-bottom: 10%;
+    color: #C4CFDE;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 24px;
+}
+
+.skillcard-dark:hover .skilllogo{
+    display: none;
+    }
+.skillcard-dark:hover .skilllogohovered{
+    display: block;
+    }
+.skillcard-dark:hover{
+background: #ff004f;
+color: #fff;
+-webkit-transition: background 500ms linear;
+    -ms-transition: background 500ms linear;
+    transition: background 500ms linear;
+}
+.skillcard-dark:hover .skilltitle{
+    color: #fff;
+}
+
+.skillcard-dark:hover .descriptions-dark{
+    color: #fff;
+}
+
+.websitecard-dark{
+    padding: 8%;
+    background: linear-gradient(145deg, #1e2024, #23272b);
+    border-radius: 10%;
+    
+}
+
+.websitecard-dark:hover h2{
+    color: #ff004f;
+    font-size: 23px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 34px;
+    font-weight: 600;
+}
+
+.websitecard-dark:hover .websiteimg{
+    transform: scale(1.1);
+}
+
+.websitecard-dark h2{
+    font-size: 23px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 34px;
+    font-weight: 600;
+    color: #C4CFDE;
+}
+.websitecard-dark:hover .arrowpink{
+    opacity: 1;
+}
+
+.modal-content-dark{
+    background: linear-gradient(145deg, #1e2024, #23272b);
+    padding: 5%;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.modal-content-dark h4{
+    color: #fff;
+    font-weight: bold;
+}
+.modal-content-dark h3{
+    color: #fff;
+    font-weight: bold;
+}
+
+.text-box-dark{
+    padding: 20px 30px;
+
+    background: linear-gradient(145deg, #1e2024, #23272b);
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+}
+.text-box-dark:hover{
+    background: #ff004f;
+    color: #fff;
+    }
+    .text-box-dark:hover .companyname{
+        color: #e2e8ec;
+    }
+    .text-box-dark:hover .leftcontarrow{
+        border-left: 15px solid #ff004f;
+        }
+    .text-box-dark:hover .rightcontarrow{
+            border-right: 15px solid #ff004f;
+            }
+
+.text-box-dark .companyname{
+    color: #fff;
+}
+
+.text-box-dark .companyjd{
+    color: #C4CFDE;
+}
+
+.blogcard-dark{
+    margin-top: 5%;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #1e2024, #23272b);
+}
+
+.blogcard-dark .blogtitle{
+    color: #C4CFDE;
+}
+
+.certificatecard-dark{
+    padding-left: 5%;
+    padding-bottom: 20%;
+    margin-top: 5%;
+    align-items: center;
+    text-align: center;
+    padding-right: 5%;
+    background: linear-gradient(145deg, #1e2024, #23272b);
+}
+
+.certificatecard-dark .skilltitle{
+    color: #C4CFDE;
+}
+
+.certificatecard-dark .certtitle, .certificatedate{
+    color: #C4CFDE;
+}
+
+.contactmecard-dark{
+    padding: 4%;
+    border-radius: 5px;
+    background: linear-gradient(145deg, #1e2024, #23272b);
+    color: #C4CFDE;
+}
+
+.contactmecard-dark .contacttitle{
+    color: #C4CFDE;
+
+}
+
+.logocard-dark{
+    background-color: #212428;
+    border: none;
+    width: 80px;
+    height: 80px;
+}
+
+
+.logocard-dark .card{
+    background-color: #212428;
+    border: none;
+    transition: transform ease 300ms;
 }

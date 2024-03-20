@@ -1,146 +1,739 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Manasi Anantpurkar</title>
+  <head>
+    <title>Manasi Anantpurkar</title>
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="stylesnew.css">
-        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    
-        <!--Links to Fonts-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    
-</head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesnew.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!--Links to Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+
     <body>
       
-            <nav class="navbar  navbar-expand-lg ">
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
-                <img class="navbar-brand" src="images/manasilogo.png"/>               
-                  <ul class="navbar-nav navbar-right" >
-                      <li class="nav-item">
-                          <a class="nav-link" href="#skills">Skills</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#experience">Experience</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#blogs">Blogs</a>
-                      </li>
-
-                      <li class="nav-item">
-                        <a class="nav-link" href="#certifications">Certifications</a>
+        <div class="light-mode" id="lightdiv">
+          <nav class="navbar  navbar-expand-lg ">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+              <img class="navbar-brand" src="images/manasilogo.png"/> 
+              <button type="button" class="btn btn-dark" onclick="toggleDivs()">Switch to Dark Mode</button>                
+                <ul class="navbar-nav navbar-right" >
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
                     </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#contact">Contact</a>
-                      </li>
-                  </ul>
-              </div>
-          </nav>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blogs">Blogs</a>
+                    </li>
 
-          <div class=" firstsection" id="firstsec">
-            <div class="row">
-              <div class="col-md-6 definition col-sm-12">
-                <div class="definitonfirsthalf">
-                  <h2 class="intro">Hi, I'm  <span class="pink-title"> Manasi Anantpurkar</span></h2>
-                   <div class='console-container'>
-                      <span class="pink-title" style="font-size:36px">a </span> 
-                      <span id='roletext'></span> <br><br>
-                      <span class="descriptions">
-                      I'm on a mission to outsmart inefficiency with a keyboard and a sprinkle of wit. By automating tasks, I'm the productivity wizard here to save the day, one click at a time!
-                      </span>
-                   </div>
-                   <br>
-                   
-                </div>
-               
-                <div class="definitonsecondhalf">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#certifications">Certifications</a>
+                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class=" firstsection" id="firstsec">
+          <div class="row">
+            <div class="col-md-6 definition col-sm-12">
+              <div class="definitonfirsthalf">
+                <h2 class="intro">Hi, I'm  <span class="pink-title"> Manasi Anantpurkar</span></h2>
+                 <div class='console-container'>
+                    <span class="pink-title" style="font-size:36px">a </span> 
+                    <span id='roletext'></span> <br><br>
+                    <span class="descriptions">
+                    I'm on a mission to outsmart inefficiency with a keyboard and a sprinkle of wit. By automating tasks, I'm the productivity wizard here to save the day, one click at a time!
+                    </span>
+                 </div>
+                 <br>
+                 
+              </div>
+             
+              <div class="definitonsecondhalf">
+                
+                  <h4 class="logodesctext">FIND ME ON</h4>
+                  <br>
+                  <div class="row">
+                    <div class="col-md-2 card logocard">
+                      <a class="card shadow" target="_blank" href="https://www.linkedin.com/in/manasi-anantpurkar">
+                        <img class = "logo" src="images/linkedin1.png">
+                        <img class = "logohovered" src="images/linkedin2.png">
+                      </a>
+                    </div>
+                    <div class="col-md-2 card logocard">
+                      <a class="card shadow" target="_blank" href="https://www.instagram.com/mansaaayyyyy/">
+                        <img class = "logo" src="images/instagram1.png">
+                        <img class = "logohovered" src="images/instagram.png">
+                      </a>
+                    </div>
+                    <div class="col-md-2 card logocard">
+                      <a class="card shadow" target="_blank" href="mailto:manasianantpurkar@gmail.com" >
+                        <img class = "logo" src="images/email.png">
+                        <img class = "logohovered" src="images/mail2.png">
+                      </a>
+                    </div>
                   
-                    <h4 class="logodesctext">FIND ME ON</h4>
-                    <br>
-                    <div class="row">
-                      <div class="col-md-2 card logocard">
-                        <a class="card shadow" target="_blank" href="https://www.linkedin.com/in/manasi-anantpurkar">
-                          <img class = "logo" src="images/linkedin1.png">
-                          <img class = "logohovered" src="images/linkedin2.png">
-                        </a>
-                      </div>
-                      <div class="col-md-2 card logocard">
-                        <a class="card shadow" target="_blank" href="https://www.instagram.com/mansaaayyyyy/">
-                          <img class = "logo" src="images/instagram1.png">
-                          <img class = "logohovered" src="images/instagram.png">
-                        </a>
-                      </div>
-                      <div class="col-md-2 card logocard">
-                        <a class="card shadow" target="_blank" href="mailto:manasianantpurkar@gmail.com" >
-                          <img class = "logo" src="images/email.png">
-                          <img class = "logohovered" src="images/mail2.png">
-                        </a>
-                      </div>
+                </div>
+              </div>
+              
+            </div> 
+
+            <div class="col-md-6">
+              <div>
+                <img  class="photo" src="images/illustration.png"/>
+              </div>
+                
+            </div>
+          </div>
+        </div>
+
+        <hr class="linebreak">
+        
+        <div class="secondsection" id="skills">
+          <h1 class="sectiontitle"> What I do </h1>
+          <br>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card skillcard">
+                  <div>
+                    <img class="skilllogo" src="images/monitor.png"/>
+                    <img class="skilllogohovered" src="images/monitorwhite.png"/>
+                    <h2 class="skilltitle">Data Analytics</h2>
+                    <span class="descriptions">I thrive on analyzing and interpreting data, crafting meaningful insights, and presenting them through visually appealing dashboards for enhanced accessibility.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card skillcard">
+                  <div>
+                    <img class="skilllogo" src="images/coding.png"/>
+                    <img class="skilllogohovered" src="images/codingwhite.png"/>
+                    <h2 class="skilltitle">Development</h2>
+                    <span class="descriptions">My passion lies in creating dynamic and user-friendly dashboards by combining various data sources, ensuring seamless accessibility for users in the development process.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card skillcard">
+                  <div>
+                    <div>
+                      <img class="skilllogo" src="images/robot.png"/>
+                      <img class="skilllogohovered" src="images/robotwhite.png"/>
+                      <h2 class="skilltitle">Automations</h2>
+                      <span class="descriptions"> I specialize in streamlining and optimizing data workflows, utilizing automation techniques to effortlessly compile and update dashboards for maximum accessibility and efficiency.</span>
+                    </div>
                     
                   </div>
                 </div>
-                
-              </div> 
+              </div>
+            </div>
+          </div>
+          
+        </div>
 
-              <div class="col-md-6">
-                <div>
-                  <img  class="photo" src="images/illustration.png"/>
-                </div>
+        <hr class="linebreak">
+
+        <div class="secondsection" id="portfolio">
+          <h1 class="sectiontitle"> My Portfolio </h1>
+          <div class="container">
+            <div class="row projectrow">
+              <div class="col-md-4" data-toggle="modal" data-target="#exampleModalCenter">
+                <div class="websitecard shadow">
+                  <img class="websiteimg" src="images/CCRNETDemo.png"/>
                   
+                  <span class="projecttitle">RESEARCH</span>
+                  <h2>CCRNET <img class="arrowpink" src="images/top-right.png"></h2>
+
+                  
+                  
+                </div>
+              </div>
+              <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3 class="modal-title projecttitleinpopup" id="exampleModalLongTitle">Customer Conversion Rate Network</h3>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-md-9">
+                          <h4 >Background</h4>
+                            <span class="descriptions">
+                              Customers are of paramount importance to a company. Store owners need to analyze and
+                              comprehend the customer experience when they visit a shop. Based on the customer's emotional and
+                              behavioral responses, diverse products are suggested to the customer. A vital part of this project
+                              involves computing an interest score by establishing a process for detecting customer emotions,
+                              analyzing their poses, and estimating nonverbal cues using neural networks, deep learning, and
+                              computer vision. This deep learning based implementation of the defined logical model is found to
+                              return reasonable estimations of a customer's interest states. These estimations are highly correlated
+                              with visual-cue-based interest states that a customer may exist in.
+                            </span>
+
+                            <h4>Research Paper</h4>
+                            <span>
+                              <a class="descriptions projecttitle"target="_blank" href="https://ieeexplore.ieee.org/document/9972152">Customer Conversion Rate Network</a></span>
+                            <h4>Recognitions</h4>
+                              <span class="descriptions">First Prize -  Inter Department Project Competition, Batch 2022</span>
+                            <h4>Video</h4>
+                              <span>
+                                <a class="descriptions projecttitle" target="_blank" href="https://youtu.be/AWXztq4hMtQ">Youtube Link</a></span>
+                              
+                              
+                            </div>
+                        <div class="col-md-3">
+                          <h4>Tools and Tech</h4>
+                          <ul class="descriptions">
+                            <li>Computer Vision</li>
+                            <li>Image Recognition</li>
+                            <li>Object Detection and Classification</li>
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                            <li>Mediapipe</li>
+                            <li>Tensorflow</li>
+                          </ul>
+                        </div>
+                      </div>
+                      
+
+                      
+
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4" data-toggle="modal" data-target="#NSSDiaryModal">
+                <div class="websitecard shadow">
+                  <img class="websiteimg" src="images/NSSDiaryDemo.png"/>
+                  <span class="projecttitle">APPLICATION</span>
+                  <h2>NSS Diary Application <img class="arrowpink" src="images/top-right.png"></h2>
+
+                </div>
+              </div>
+              <div class="modal fade" id="NSSDiaryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="padding-left: 0px;padding-right: 0px;">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3 class="modal-title projecttitleinpopup" id="exampleModalLongTitle">National Service Scheme - EDiary</h3>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-md-9">
+                          <h4 >Background</h4>
+                            <span class="descriptions">
+                              The project involved the creation of an online platform aimed at modernizing the traditional offline diary system utilized by the National Service Scheme. 
+                              We implemented features like seamless offline updating capabilities, comprehensive event tracking functionalities, a robust chat system, and real-time notifications. 
+                              The project was able to successfully serve approximately 4500 students within the Mumbai University community, where the platform garnered recognition for its transformative impact and excellence.
+                            </span>
+
+                            <h4>Recognitions</h4>
+                              <span class="descriptions">Appreciation from Director of National Service Scheme, Mumbai University</span>
+                              <a class="projecttitle" target="_blank" href="https://drive.google.com/file/d/1Fsw9U1T7YdgQ51AC27qsCF3SMgQgohRv/view?usp=sharing" target="_blank">Click to Open</a>
+                            </div>
+                        <div class="col-md-3">
+                          <h4>Tools and Tech</h4>
+                          <ul class="descriptions">
+                            <li>Django REST Framework</li>
+                            <li>PostgreSQL</li>
+                            <li>Postman</li>
+                            <li>Jenkins</li>
+                            <li>Docker images</li>
+                            <li>AWS EC2</li>
+                            <li>React</li>
+                          </ul>
+                        </div>
+                      </div>
+                      
+
+                      
+
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4" data-toggle="modal" data-target="#LogicModal">
+                <div class="websitecard shadow">
+                  <img class="websiteimg" src="images/LogicDemo.png"/>
+                  <span class="projecttitle">APPLICATION / GAME</span>
+                  <h2>Logic <img class="arrowpink" src="images/top-right.png"></h2>
+                </div>
+              </div>
+              <div class="modal fade" id="LogicModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3 class="modal-title projecttitleinpopup" id="exampleModalLongTitle">Logic</h3>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-md-9">
+                          <h4 >Background</h4>
+                            <span class="descriptions">
+                              "Word Logic Quest" is a brain-teasing game where you unravel the secret logic behind each word to progress through 20 exciting levels. With Unity and C#, we've crafted an engaging experience that challenges your mind and boosts your vocabulary. Can you crack the code and conquer every level?
+                            </span>
+
+                            <h4>Link to App</h4>
+                            <span>
+                              <a class="descriptions projecttitle" target="_blank" href="https://teknack.itch.io/logic-the-word-game">Logic</a></span>
+                            <h4>Code</h4>
+                            <a class="descriptions projecttitle" target="_blank" href="https://github.com/mansayyy/Logic">Github Link</a></span>
+                            </div>
+                        <div class="col-md-3">
+                          <h4>Tools and Tech</h4>
+                          <ul class="descriptions">
+                            <li>Unity</li>
+                            <li>C#</li>
+                            <li>UI/UX</li>
+                          </ul>
+                        </div>
+                      </div>
+                      
+
+                      
+
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row projectrow">
+              <div class="col-md-4" data-toggle="modal" data-target="#NSSWebsite">
+                <div class="websitecard shadow">
+                  <img class="websiteimg" src="images/NSSWebsite.png"/>
+                  <span class="projecttitle">WEBSITE</span>
+                  <h2>NSS Website <img class="arrowpink" src="images/top-right.png"></h2>
+                </div>
+              </div>
+              <div class="modal fade" id="NSSWebsite" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3 class="modal-title projecttitleinpopup" id="exampleModalLongTitle">National Service Scheme Mumbai</h3>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-md-9">
+                          <h4 >Background</h4>
+                            <span class="descriptions">
+                                I redesigned and developed a website for the National Service Scheme (NSS) Mumbai, an organization under the Government of India, with the aim of showcasing their activities to a global audience. The project involved a complete overhaul and reconstruction of the website using WordPress, a popular content management system. Through this initiative, the NSS Mumbai gained a modern and user-friendly platform to effectively communicate their initiatives and engage with the community at large.
+                            </span>
+
+                            <h4>Link to Website</h4>
+                            <span>
+                              <a class="descriptions projecttitle" target="_blank" href="https://nssmu.in/">NSS</a></span>
+                          </div>
+                        <div class="col-md-3">
+                          <h4>Tools and Tech</h4>
+                          <ul class="descriptions">
+                            <li>WordPress</li>
+                          </ul>
+                        </div>
+                      </div>
+                      
+
+                      
+
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4" data-toggle="modal" data-target="#DomainWebsite">
+                <div class="websitecard shadow">
+                  <img class="websiteimg" src="images/DomainWebsite.png"/>
+                  <span class="projecttitle">WEBSITE</span>
+                  <h2>Domain Website <img class="arrowpink" src="images/top-right.png"></h2>
+                </div>
+              </div>
+              <div class="modal fade" id="DomainWebsite" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3 class="modal-title projecttitleinpopup" id="exampleModalLongTitle">Domain Website</h3>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-md-9">
+                          <h4 >Background</h4>
+                            <span class="descriptions">
+                                Crafted a dynamic website for the college's Mathematics Club, leveraging a blend of HTML, CSS, Bootstrap, and JavaScript to ensure an engaging and responsive user experience. Implemented PHP functionalities to seamlessly handle form submissions and enhance interactivity. This project not only showcased my proficiency in web development technologies but also demonstrated my ability to create customized solutions tailored to meet specific organizational needs.
+                            </span>
+
+                            <h4>Link to Website</h4>
+                            <span>
+                              <a class="descriptions projecttitle" target="_blank" href="https://rutvij-patil24.github.io/domain-website-bootstrap/">Domain</a></span>
+                            
+                            <h4>Code</h4>
+                            <span>
+                              <a class="descriptions projecttitle" target="_blank" href="https://github.com/rutvij-patil24/domain-website-bootstrap  ">Github Code</a></span>
+                          
+                              
+                          </div>
+                        <div class="col-md-3">
+                          <h4>Tools and Tech</h4>
+                          <ul class="descriptions">
+                            <li>PHP</li>
+                            <li>HTML</li>
+                            <li>JavaScript</li>
+
+                            <li>Bootstrap</li>
+                            <li>CSS</li>
+                          </ul>
+                        </div>
+                      </div>
+                      
+
+                      
+
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4" data-toggle="modal" data-target="#BlockerApp">
+                <div class="websitecard shadow">
+                  <img class="websiteimg" src="images/BlockerApp.png"/>
+                  <span class="projecttitle">APPLICATION / GAME</span>
+                  <h2>Blocker<img class="arrowpink" src="images/top-right.png"></h2>
+                </div>
+              </div>
+              <div class="modal fade" id="BlockerApp" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3 class="modal-title projecttitleinpopup" id="exampleModalLongTitle">Blocker</h3>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-md-9">
+                          <h4 >Background</h4>
+                            <span class="descriptions">
+                              Created an immersive endless game using Unity and C#, challenging players to navigate a perilous environment while avoiding alien attacks and UFO threats. Achieved an average rating of 4.9 on PlayStore and surpassed 100 downloads, demonstrating the game's popularity and appeal. Leveraged strong coding skills to implement dynamic gameplay mechanics and optimize user experience.
+                            </span>
+
+                            <h4>Link to App</h4>
+                            <span>
+                              <a class="descriptions projecttitle" target="_blank" href="https://play.google.com/store/apps/details?id=com.Teknack.Blocker">Blocker</a></span>
+                      
+                              
+                          </div>
+                        <div class="col-md-3">
+                          <h4>Tools and Tech</h4>
+                          <ul class="descriptions">
+                            <li>Unity</li>
+                            <li>C#</li>
+                            <li>UI/UX</li>
+                          </ul>
+                        </div>
+                      </div>
+                      
+
+                      
+
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row projectrow">
+              <div class="col-md-4" data-toggle="modal" data-target="#JetChat">
+                <div class="websitecard shadow">
+                  <img class="websiteimg" src="images/jetchat.png"/>
+                  <span class="projecttitle">APPLICATION</span>
+                  <h2>JetChat <img class="arrowpink" src="images/top-right.png"></h2>
+                </div>
+              </div>
+              <div class="modal fade" id="JetChat" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3 class="modal-title projecttitleinpopup" id="exampleModalLongTitle">JetChat</h3>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-md-9">
+                          <h4 >Background</h4>
+                            <span class="descriptions">
+                              JetChat is an application that helps people to interact with each other online with a very simple and easy-to-use interface. With its features like real-time updates, 1v1 chatting, easy registrations, JetChat is an application that perfectly satisfies every user’s communication needs. People can live chat with anybody, anywhere without sharing their phone number.
+                            </span>
+                            <h4>Link</h4>
+                            <span>
+                              <a class="descriptions projecttitle" target="_blank" href="https://grejojoby.itch.io/jetchat">JetChat</a></span>
+                         
+                            
+                            <h4>Video</h4>
+                            <span>
+                              <a class="descriptions projecttitle"  target="_blank" href="https://www.youtube.com/watch?v=KLkpoMCgYqI">YouTube Link</a></span>
+                          </div>
+                        <div class="col-md-3">
+                          <h4>Tools and Tech</h4>
+                          <ul class="descriptions">
+                            <li>React Native</li>
+                            <li>Firebase</li>
+                            <li>Expo</li>
+                            <li>Android Development</li>
+                          </ul>
+                        </div>
+                      </div>
+                      
+
+                      
+
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4" data-toggle="modal" data-target="#JobApp">
+                <div class="websitecard shadow">
+                  <img class="websiteimg" src="images/jobApp.png"/>
+                  <span class="projecttitle">APPLICATION</span>
+                  <h2>Job App <img class="arrowpink" src="images/top-right.png"></h2>
+                </div>
+              </div>
+              <div class="modal fade" id="JobApp" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3 class="modal-title projecttitleinpopup" id="exampleModalLongTitle">Job App</h3>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-md-9">
+                          <h4 >Background</h4>
+                            <span class="descriptions">
+                              Job App is a social networking platform designed to facilitate connections between users and provide insights into the job application process. With Job App, users can create profiles, connect with friends, and share information about their job applications. Whether you're seeking advice, networking opportunities, or simply want to stay updated on your friends' career journeys, Job App has you covered.
+                            </span>
+                            <h4>Link</h4>
+                            <span>
+                              <a class="descriptions projecttitle" target="_blank" href="http://198.58.107.253">Job App</a></span>
+                         
+                            
+                            <h4>Code</h4>
+                            <span>
+                              <a class="descriptions projecttitle"  target="_blank" href="https://github.com/mansayyy/FlaskApp---Job-Applications">Github Repository</a></span>
+                          </div>
+                        <div class="col-md-3">
+                          <h4>Tools and Tech</h4>
+                          <ul class="descriptions">
+                            <li>Flask</li>
+                            <li>MySQL</li>
+                            <li>SQLAlchemy</li>
+                            <li>Linode</li>
+                            <li>Python</li>
+                            <li>HTML/CSS</li>
+                          </ul>
+                        </div>
+                      </div>
+                      
+
+                      
+
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        
+        <hr class="linebreak">
+
+          <div class="secondsection"id="experience">
+            <h1> My Experience </h1>
+
+            <div class="timeline">
+              <div class="container companycont leftcont">
+                <img src="images/newmontlogo.jpeg" alt="">
+                <div class="text-box shadow">
+                  <h2 class="companyname">Newmont Mining Corporation</h2>
+                  <small class="companyjd">May 2023-Present</small>
+                  <p class="companyjd">
+                    I utilized Microsoft Power Platform tools including Power BI, Power Apps, Power Automate, and Power Virtual Agents to optimize data analytics, automate manual processes, and bolster IT operations, resulting in marked improvements in efficiency and accuracy. My responsibilities spanned crafting dynamic dashboards, automating data extraction, developing user-friendly chatbots, and facilitating comprehensive Microsoft Teams training, highlighting my multifaceted skill set and significant contributions to various projects.</p>
+                    <div class="badge">PowerBI</div><div class="badge">Power Automate</div> <div class="badge">Power Apps</div><div class="badge">ServiceNow</div><div class="badge">Power Virtual Agents</div><div class="badge">SAP</div>
+                    <span class="leftcontarrow"></span> 
+                </div>
+              </div>
+              <div class="container companycont rightcont">
+                <img src="images/dsllogo.png" alt="">
+                <div class="text-box shadow">
+                  <h2 class="companyname">Edplus, ASU</h2>
+                  <small class="companyjd">Feb 2023 - Present </small>
+                  <p class="companyjd">
+                    I spearheaded an educational transformation by developing immersive VR experiences using Unity and C#, resulting in a remarkable 40% increase in student grades. Additionally, I exercised precise project management skills by orchestrating tasks within Jira and ensured version control integrity through Bitbucket and Git. Furthermore, I engineered automations to track student data, reducing manual updating time by 68%, and created captivating dashboards with Google Looker Studio, leveraging AWS Lambda functions for data visualization from S3 buckets.</p>
+                    <div class="badge">Python</div><div class="badge">Looker Studio</div> <div class="badge">C#</div><div class="badge">Unity</div><div class="badge"> Salesforce </div><div class="badge">AWS</div><div class="badge">Bitbucket</div><div class="badge">Jira</div>
+                    <span class="rightcontarrow"></span>
+                </div>
+              </div>
+              <div class="container companycont leftcont">
+                <img src="images/fdlogo.jpeg" alt="">
+                <div class="text-box">
+                  <h2 class="companyname">Fields Data</h2>
+                  <small class="companyjd">May 2021 - June 2022</small>
+                  <p class="companyjd">
+                    As a Data Analyst at United Nations Operations Iraq, I utilized Power BI to analyze a dataset of 16,000 calls per month, improving the call center system by 60% through data mapping and database standardization. Additionally, I designed and developed a working website using Figma for designing and ReactJs, HTML, CSS, and Javascript for development. I executed SEO strategies, increased visitor count by 140% within a month, and was responsible for maintenance and user tracking using Google Analytics.</p>
+                    <div class="badge">Tableau</div><div class="badge">Looker Studio</div> <div class="badge">Python</div><div class="badge">JavaScript</div><div class="badge"> SEO </div><div class="badge">HTML</div><div class="badge">CSS</div>
+                   
+                    <span class="leftcontarrow"></span>
+                </div>
               </div>
             </div>
           </div>
 
           <hr class="linebreak">
-          
-          <div class="secondsection" id="skills">
-            <h1 class="sectiontitle"> What I do </h1>
-            <br>
+
+          <div class="secondsection" id="blogs">
+            <h1> My Blogs </h1>
             <div class="container">
               <div class="row">
                 <div class="col-md-4">
-                  <div class="card skillcard">
-                    <div>
-                      <img class="skilllogo" src="images/monitor.png"/>
-                      <img class="skilllogohovered" src="images/monitorwhite.png"/>
-                      <h2 class="skilltitle">Data Analytics</h2>
-                      <span class="descriptions">I thrive on analyzing and interpreting data, crafting meaningful insights, and presenting them through visually appealing dashboards for enhanced accessibility.</span>
+                  <a class="noformatlink" href="https://medium.com/@manasi_31636/machine-learning-not-rocket-science-5ba06b288387" target="_blank">
+
+                    <div class="card blogcard h-100 shadow">
+                      <img src="images/blog1.webp" class="blogimg" alt="">
+                      <h2 class="blogtitle">Machine Learning - Not Rocket Science <img class="arrowpink" src="images/top-right.png">  </h2>
+                      
                     </div>
-                  </div>
+                  </a>
+                  
                 </div>
                 <div class="col-md-4">
-                  <div class="card skillcard">
-                    <div>
-                      <img class="skilllogo" src="images/coding.png"/>
-                      <img class="skilllogohovered" src="images/codingwhite.png"/>
-                      <h2 class="skilltitle">Development</h2>
-                      <span class="descriptions">My passion lies in creating dynamic and user-friendly dashboards by combining various data sources, ensuring seamless accessibility for users in the development process.</span>
-                    </div>
+                  <a class="noformatlink"  href="https://medium.com/@manasi_31636/web-development-the-chamber-of-secrets-ee6a7f6db4c8" target="_blank">
+
+                  <div class="card blogcard h-100 shadow">
+                    <img src="images/blog2.webp" class="blogimg" alt="">
+                    <h2 class="blogtitle">Web Development - The Chamber of Secrets <img class="arrowpink" src="images/top-right.png">  </h2>
                   </div>
+                  </a>
                 </div>
                 <div class="col-md-4">
-                  <div class="card skillcard">
+                  <a class="noformatlink" href="https://medium.com/@manasi_31636/the-website-race-32a1f1604290" target="_blank">
+
+                    <div class="card blogcard h-100 shadow">
+                      <img src="images/blog3.webp" class="blogimg" alt="">
+                      <h2 class="blogtitle">  The Website Race <img class="arrowpink" src="images/top-right.png"> </h2>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="linebreak">
+
+          <div class="secondsection" id="certifications">
+            <h1> My Certifications </h1>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card certificatecard">
                     <div>
                       <div>
-                        <img class="skilllogo" src="images/robot.png"/>
-                        <img class="skilllogohovered" src="images/robotwhite.png"/>
-                        <h2 class="skilltitle">Automations</h2>
-                        <span class="descriptions"> I specialize in streamlining and optimizing data workflows, utilizing automation techniques to effortlessly compile and update dashboards for maximum accessibility and efficiency.</span>
+                        <img class="skilllogo" src="images/certificate.png"/>
+                        <h2 class="skilltitle">Scrum Fundamentals</h2>
+                        <span class="certtitle">SCRUMStudy - Accreditation body for Scrum and Agile <br> </span>
+                        <span class="certificatedate">April 2021</span>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card certificatecard">
+                    <div>
+                      <div>
+                        <img class="skilllogo" src="images/certificate.png"/>
+                        <h2 class="skilltitle">Amazon Web Services</h2>
+                        <span class="certtitle">AutoDice <br> </span>
+                        <span class="certificatedate">February 2020</span>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card certificatecard">
+                    <div>
+                      <div>
+                        <img class="skilllogo" src="images/certificate.png"/>
+                        <h2 class="skilltitle"> Python Bootcamp</h2>
+                        <span class="certtitle"> Udemy <br> </span>
+                        <span class="certificatedate">February 2020</span>
                       </div>
                       
                     </div>
@@ -148,680 +741,902 @@
                 </div>
               </div>
             </div>
-            
           </div>
-
+       
           <hr class="linebreak">
 
-          <div class="secondsection" id="portfolio">
-            <h1 class="sectiontitle"> My Portfolio </h1>
+          <div class="secondsection" id="contact">
+            <h1> Contact Me </h1>
             <div class="container">
-              <div class="row projectrow">
-                <div class="col-md-4" data-toggle="modal" data-target="#exampleModalCenter">
-                  <div class="websitecard shadow">
-                    <img class="websiteimg" src="images/CCRNETDemo.png"/>
-                    
-                    <span class="projecttitle">RESEARCH</span>
-                    <h2>CCRNET <img class="arrowpink" src="images/top-right.png"></h2>
-
-                    
-                    
-                  </div>
-                </div>
-                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h3 class="modal-title projecttitleinpopup" id="exampleModalLongTitle">Customer Conversion Rate Network</h3>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="card contactmecard shadow h-100">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <img class="contactmelogo" src="images/location.png"/>
                       </div>
-                      <div class="modal-body">
-                        <div class="row">
-                          <div class="col-md-9">
-                            <h4 >Background</h4>
-                              <span class="descriptions">
-                                Customers are of paramount importance to a company. Store owners need to analyze and
-                                comprehend the customer experience when they visit a shop. Based on the customer's emotional and
-                                behavioral responses, diverse products are suggested to the customer. A vital part of this project
-                                involves computing an interest score by establishing a process for detecting customer emotions,
-                                analyzing their poses, and estimating nonverbal cues using neural networks, deep learning, and
-                                computer vision. This deep learning based implementation of the defined logical model is found to
-                                return reasonable estimations of a customer's interest states. These estimations are highly correlated
-                                with visual-cue-based interest states that a customer may exist in.
-                              </span>
-
-                              <h4>Research Paper</h4>
-                              <span>
-                                <a class="descriptions projecttitle"target="_blank" href="https://ieeexplore.ieee.org/document/9972152">Customer Conversion Rate Network</a></span>
-                              <h4>Recognitions</h4>
-                                <span class="descriptions">First Prize -  Inter Department Project Competition, Batch 2022</span>
-                              <h4>Video</h4>
-                                <span>
-                                  <a class="descriptions projecttitle" target="_blank" href="https://youtu.be/AWXztq4hMtQ">Youtube Link</a></span>
-                                
-                                
-                              </div>
-                          <div class="col-md-3">
-                            <h4>Tools and Tech</h4>
-                            <ul class="descriptions">
-                              <li>Computer Vision</li>
-                              <li>Image Recognition</li>
-                              <li>Object Detection and Classification</li>
-                              <li>Python</li>
-                              <li>JavaScript</li>
-                              <li>Mediapipe</li>
-                              <li>Tensorflow</li>
-                            </ul>
-                          </div>
-                        </div>
-                        
-
-                        
-
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <div class="col-md-9">
+                        <span class="contacttitle">My Address <br></span>
+                        <span>Tempe, Arizona, United States.</span>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4" data-toggle="modal" data-target="#NSSDiaryModal">
-                  <div class="websitecard shadow">
-                    <img class="websiteimg" src="images/NSSDiaryDemo.png"/>
-                    <span class="projecttitle">APPLICATION</span>
-                    <h2>NSS Diary Application <img class="arrowpink" src="images/top-right.png"></h2>
-
-                  </div>
-                </div>
-                <div class="modal fade" id="NSSDiaryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="padding-left: 0px;padding-right: 0px;">
-                  <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h3 class="modal-title projecttitleinpopup" id="exampleModalLongTitle">National Service Scheme - EDiary</h3>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
+                <div class="col-md-6">
+                  <div class="card contactmecard shadow h-100">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <img class="contactmelogo" src="images/social-media.png"/>
                       </div>
-                      <div class="modal-body">
-                        <div class="row">
-                          <div class="col-md-9">
-                            <h4 >Background</h4>
-                              <span class="descriptions">
-                                The project involved the creation of an online platform aimed at modernizing the traditional offline diary system utilized by the National Service Scheme. 
-                                We implemented features like seamless offline updating capabilities, comprehensive event tracking functionalities, a robust chat system, and real-time notifications. 
-                                The project was able to successfully serve approximately 4500 students within the Mumbai University community, where the platform garnered recognition for its transformative impact and excellence.
-                              </span>
-
-                              <h4>Recognitions</h4>
-                                <span class="descriptions">Appreciation from Director of National Service Scheme, Mumbai University</span>
-                                <a class="projecttitle" target="_blank" href="https://drive.google.com/file/d/1Fsw9U1T7YdgQ51AC27qsCF3SMgQgohRv/view?usp=sharing" target="_blank">Click to Open</a>
-                              </div>
-                          <div class="col-md-3">
-                            <h4>Tools and Tech</h4>
-                            <ul class="descriptions">
-                              <li>Django REST Framework</li>
-                              <li>PostgreSQL</li>
-                              <li>Postman</li>
-                              <li>Jenkins</li>
-                              <li>Docker images</li>
-                              <li>AWS EC2</li>
-                              <li>React</li>
-                            </ul>
-                          </div>
+                      <div class="col-md-9">
+                        <span class="contacttitle">Social Media Links <br></span>
+                        <span>
+                          <div class="row">
+                            <div class="col-md-2 card logocard">
+                              <a class="card" target="_blank" href="https://www.linkedin.com/in/manasi-anantpurkar">
+                                <img class = "bottomlogo" src="images/linkedin1.png">
+                              </a>
+                            </div>
+                            <div class="col-md-2 card logocard">
+                              <a class="card" target="_blank" href="">
+                                <img class = "bottomlogo" src="images/instagram1.png">
+                              </a>
+                            </div>
+                            <div class="col-md-2 card logocard">
+                              <a class="card" target="_blank" href="mailto:manasianantpurkar@gmail.com" >
+                                <img class = "bottomlogo" src="images/email.png">
+                              </a>
+                            </div>
+                          
                         </div>
-                        
-
-                        
-
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4" data-toggle="modal" data-target="#LogicModal">
-                  <div class="websitecard shadow">
-                    <img class="websiteimg" src="images/LogicDemo.png"/>
-                    <span class="projecttitle">APPLICATION / GAME</span>
-                    <h2>Logic <img class="arrowpink" src="images/top-right.png"></h2>
-                  </div>
-                </div>
-                <div class="modal fade" id="LogicModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h3 class="modal-title projecttitleinpopup" id="exampleModalLongTitle">Logic</h3>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <div class="row">
-                          <div class="col-md-9">
-                            <h4 >Background</h4>
-                              <span class="descriptions">
-                                "Word Logic Quest" is a brain-teasing game where you unravel the secret logic behind each word to progress through 20 exciting levels. With Unity and C#, we've crafted an engaging experience that challenges your mind and boosts your vocabulary. Can you crack the code and conquer every level?
-                              </span>
-
-                              <h4>Link to App</h4>
-                              <span>
-                                <a class="descriptions projecttitle" target="_blank" href="https://teknack.itch.io/logic-the-word-game">Logic</a></span>
-                              <h4>Code</h4>
-                              <a class="descriptions projecttitle" target="_blank" href="https://github.com/mansayyy/Logic">Github Link</a></span>
-                              </div>
-                          <div class="col-md-3">
-                            <h4>Tools and Tech</h4>
-                            <ul class="descriptions">
-                              <li>Unity</li>
-                              <li>C#</li>
-                              <li>UI/UX</li>
-                            </ul>
-                          </div>
-                        </div>
-                        
-
-                        
-
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </span>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="row projectrow">
-                <div class="col-md-4" data-toggle="modal" data-target="#NSSWebsite">
-                  <div class="websitecard shadow">
-                    <img class="websiteimg" src="images/NSSWebsite.png"/>
-                    <span class="projecttitle">WEBSITE</span>
-                    <h2>NSS Website <img class="arrowpink" src="images/top-right.png"></h2>
-                  </div>
-                </div>
-                <div class="modal fade" id="NSSWebsite" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h3 class="modal-title projecttitleinpopup" id="exampleModalLongTitle">National Service Scheme Mumbai</h3>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
+
+              <div class="row" style="margin-top: 10px;">
+                <div class="col-md-6">
+                  <div class="card contactmecard shadow">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <img class="contactmelogo" src="images/mail1.png"/>
                       </div>
-                      <div class="modal-body">
-                        <div class="row">
-                          <div class="col-md-9">
-                            <h4 >Background</h4>
-                              <span class="descriptions">
-                                  I redesigned and developed a website for the National Service Scheme (NSS) Mumbai, an organization under the Government of India, with the aim of showcasing their activities to a global audience. The project involved a complete overhaul and reconstruction of the website using WordPress, a popular content management system. Through this initiative, the NSS Mumbai gained a modern and user-friendly platform to effectively communicate their initiatives and engage with the community at large.
-                              </span>
-
-                              <h4>Link to Website</h4>
-                              <span>
-                                <a class="descriptions projecttitle" target="_blank" href="https://nssmu.in/">NSS</a></span>
-                            </div>
-                          <div class="col-md-3">
-                            <h4>Tools and Tech</h4>
-                            <ul class="descriptions">
-                              <li>WordPress</li>
-                            </ul>
-                          </div>
-                        </div>
-                        
-
-                        
-
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <div class="col-md-9">
+                        <span class="contacttitle">My Mail <br></span>
+                        <span><a href="mailto:manasianantpurkar@gmail.com">manasianantpurkar@gmail.com</a></span>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4" data-toggle="modal" data-target="#DomainWebsite">
-                  <div class="websitecard shadow">
-                    <img class="websiteimg" src="images/DomainWebsite.png"/>
-                    <span class="projecttitle">WEBSITE</span>
-                    <h2>Domain Website <img class="arrowpink" src="images/top-right.png"></h2>
+                <div class="col-md-6">
+                  <div class="card contactmecard shadow">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <img class="contactmelogo" src="images/website.png"/>
+                      </div>
+                      <div class="col-md-9">
+                        <span class="contacttitle">My Website <br></span>
+                        <span><a href="https://mansayyy.github.io/Manasi-Anantpurkar/"> Manasi Anantpurkar </a></span>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="modal fade" id="DomainWebsite" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h3 class="modal-title projecttitleinpopup" id="exampleModalLongTitle">Domain Website</h3>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <div class="row">
-                          <div class="col-md-9">
-                            <h4 >Background</h4>
-                              <span class="descriptions">
-                                  Crafted a dynamic website for the college's Mathematics Club, leveraging a blend of HTML, CSS, Bootstrap, and JavaScript to ensure an engaging and responsive user experience. Implemented PHP functionalities to seamlessly handle form submissions and enhance interactivity. This project not only showcased my proficiency in web development technologies but also demonstrated my ability to create customized solutions tailored to meet specific organizational needs.
-                              </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      
 
-                              <h4>Link to Website</h4>
+      
+        <div class="dark-mode hidden" id="darkdiv">
+          <nav class="navbar navbar-expand-lg dark-mode" >
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse dark-mode" id="navbarSupportedContent" style="background:none;"> 
+              <img class="navbar-brand" src="images/manasidark.png"/>  
+              
+              <button type="button" class="btn btn-light" onclick="toggleDivs()">Switch to Light Mode</button>  
+                <ul class="navbar-nav navbar-right dark-mode" >
+                    <li class="nav-item">
+                        <a class="nav-link navlink-dark" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link navlink-dark" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navlink-dark" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navlink-dark" href="#blogs">Blogs</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link navlink-dark" href="#certifications">Certifications</a>
+                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link navlink-dark" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class=" firstsection-dark" id="firstsec">
+          <div class="row">
+            <div class="col-md-6 definition col-sm-12">
+              <div class="definitonfirsthalf">
+                <h2 class="intro-dark">Hi, I'm  <span class="pink-title"> Manasi Anantpurkar</span></h2>
+                 <div class='console-container'>
+                    <span class="pink-title" style="font-size:36px">a </span> 
+                    <span id='roletext-dark'></span> <br><br>
+                    <span class="descriptions-dark">
+                    I'm on a mission to outsmart inefficiency with a keyboard and a sprinkle of wit. By automating tasks, I'm the productivity wizard here to save the day, one click at a time!
+                    </span>
+                 </div>
+                 <br>
+                 
+              </div>
+             
+              <div class="definitonsecondhalf">
+                
+                  <h4 class="logodesctext-dark">FIND ME ON</h4>
+                  <br>
+                  <div class="row">
+                    <div class="col-md-2 card logocard">
+                      <a class="card shadow" target="_blank" href="https://www.linkedin.com/in/manasi-anantpurkar">
+                        <img class = "logo" src="images/linkedin1.png">
+                        <img class = "logohovered" src="images/linkedin2.png">
+                      </a>
+                    </div>
+                    <div class="col-md-2 card logocard">
+                      <a class="card shadow" target="_blank" href="https://www.instagram.com/mansaaayyyyy/">
+                        <img class = "logo" src="images/instagram1.png">
+                        <img class = "logohovered" src="images/instagram.png">
+                      </a>
+                    </div>
+                    <div class="col-md-2 card logocard">
+                      <a class="card shadow" target="_blank" href="mailto:manasianantpurkar@gmail.com" >
+                        <img class = "logo" src="images/email.png">
+                        <img class = "logohovered" src="images/mail2.png">
+                      </a>
+                    </div>
+                  
+                </div>
+              </div>
+              
+            </div> 
+
+            <div class="col-md-6">
+              <div>
+                <img  class="photo" src="images/illustrationdark.png"/>
+              </div>
+                
+            </div>
+          </div>
+        </div>
+
+        <hr class="linebreak">
+        
+        <div class="secondsection-dark" id="skills">
+          <h1 class="sectiontitle-dark"> What I do </h1>
+          <br>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card skillcard-dark">
+                  <div>
+                    <img class="skilllogo" src="images/monitor.png"/>
+                    <img class="skilllogohovered" src="images/monitorwhite.png"/>
+                    <h2 class="skilltitle">Data Analytics</h2>
+                    <span class="descriptions-dark">I thrive on analyzing and interpreting data, crafting meaningful insights, and presenting them through visually appealing dashboards for enhanced accessibility.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card skillcard-dark">
+                  <div>
+                    <img class="skilllogo" src="images/coding.png"/>
+                    <img class="skilllogohovered" src="images/codingwhite.png"/>
+                    <h2 class="skilltitle">Development</h2>
+                    <span class="descriptions-dark">My passion lies in creating dynamic and user-friendly dashboards by combining various data sources, ensuring seamless accessibility for users in the development process.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card skillcard-dark">
+                  <div>
+                    <div>
+                      <img class="skilllogo" src="images/robot.png"/>
+                      <img class="skilllogohovered" src="images/robotwhite.png"/>
+                      <h2 class="skilltitle">Automations</h2>
+                      <span class="descriptions-dark"> I specialize in streamlining and optimizing data workflows, utilizing automation techniques to effortlessly compile and update dashboards for maximum accessibility and efficiency.</span>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+        <hr class="linebreak">
+
+        <div class="secondsection-dark" id="portfolio">
+          <h1 class="sectiontitle-dark"> My Portfolio </h1>
+          <div class="container">
+            <div class="row projectrow">
+              <div class="col-md-4" data-toggle="modal" data-target="#exampleModalCenter">
+                <div class="websitecard-dark shadow">
+                  <img class="websiteimg" src="images/CCRNETDemo.png"/>
+                  
+                  <span class="projecttitle">RESEARCH</span>
+                  <h2>CCRNET <img class="arrowpink" src="images/top-right.png"></h2>
+
+                  
+                  
+                </div>
+              </div>
+              <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content-dark">
+                    <div class="modal-header">
+                      <h3 class="modal-title projecttitleinpopup" id="exampleModalLongTitle">Customer Conversion Rate Network</h3>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-md-9">
+                          <h4 >Background</h4>
+                            <span class="descriptions-dark">
+                              Customers are of paramount importance to a company. Store owners need to analyze and
+                              comprehend the customer experience when they visit a shop. Based on the customer's emotional and
+                              behavioral responses, diverse products are suggested to the customer. A vital part of this project
+                              involves computing an interest score by establishing a process for detecting customer emotions,
+                              analyzing their poses, and estimating nonverbal cues using neural networks, deep learning, and
+                              computer vision. This deep learning based implementation of the defined logical model is found to
+                              return reasonable estimations of a customer's interest states. These estimations are highly correlated
+                              with visual-cue-based interest states that a customer may exist in.
+                            </span>
+
+                            <h4>Research Paper</h4>
+                            <span>
+                              <a class="descriptions-dark projecttitle"target="_blank" href="https://ieeexplore.ieee.org/document/9972152">Customer Conversion Rate Network</a></span>
+                            <h4>Recognitions</h4>
+                              <span class="descriptions-dark">First Prize -  Inter Department Project Competition, Batch 2022</span>
+                            <h4>Video</h4>
                               <span>
-                                <a class="descriptions projecttitle" target="_blank" href="https://rutvij-patil24.github.io/domain-website-bootstrap/">Domain</a></span>
+                                <a class="descriptions-dark projecttitle" target="_blank" href="https://youtu.be/AWXztq4hMtQ">Youtube Link</a></span>
                               
-                              <h4>Code</h4>
-                              <span>
-                                <a class="descriptions projecttitle" target="_blank" href="https://github.com/rutvij-patil24/domain-website-bootstrap  ">Github Code</a></span>
+                              
+                            </div>
+                        <div class="col-md-3">
+                          <h4>Tools and Tech</h4>
+                          <ul class="descriptions-dark">
+                            <li>Computer Vision</li>
+                            <li>Image Recognition</li>
+                            <li>Object Detection and Classification</li>
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                            <li>Mediapipe</li>
+                            <li>Tensorflow</li>
+                          </ul>
+                        </div>
+                      </div>
+                      
+
+                      
+
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4" data-toggle="modal" data-target="#NSSDiaryModal">
+                <div class="websitecard-dark shadow">
+                  <img class="websiteimg" src="images/NSSDiaryDemo.png"/>
+                  <span class="projecttitle">APPLICATION</span>
+                  <h2>NSS Diary Application <img class="arrowpink" src="images/top-right.png"></h2>
+
+                </div>
+              </div>
+              <div class="modal fade" id="NSSDiaryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="padding-left: 0px;padding-right: 0px;">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content-dark">
+                    <div class="modal-header">
+                      <h3 class="modal-title projecttitleinpopup" id="exampleModalLongTitle">National Service Scheme - EDiary</h3>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-md-9">
+                          <h4 >Background</h4>
+                            <span class="descriptions-dark">
+                              The project involved the creation of an online platform aimed at modernizing the traditional offline diary system utilized by the National Service Scheme. 
+                              We implemented features like seamless offline updating capabilities, comprehensive event tracking functionalities, a robust chat system, and real-time notifications. 
+                              The project was able to successfully serve approximately 4500 students within the Mumbai University community, where the platform garnered recognition for its transformative impact and excellence.
+                            </span>
+
+                            <h4>Recognitions</h4>
+                              <span class="descriptions-dark">Appreciation from Director of National Service Scheme, Mumbai University</span>
+                              <a class="projecttitle" target="_blank" href="https://drive.google.com/file/d/1Fsw9U1T7YdgQ51AC27qsCF3SMgQgohRv/view?usp=sharing" target="_blank">Click to Open</a>
+                            </div>
+                        <div class="col-md-3">
+                          <h4>Tools and Tech</h4>
+                          <ul class="descriptions-dark">
+                            <li>Django REST Framework</li>
+                            <li>PostgreSQL</li>
+                            <li>Postman</li>
+                            <li>Jenkins</li>
+                            <li>Docker images</li>
+                            <li>AWS EC2</li>
+                            <li>React</li>
+                          </ul>
+                        </div>
+                      </div>
+                      
+
+                      
+
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4" data-toggle="modal" data-target="#LogicModal">
+                <div class="websitecard-dark shadow">
+                  <img class="websiteimg" src="images/LogicDemo.png"/>
+                  <span class="projecttitle">APPLICATION / GAME</span>
+                  <h2>Logic <img class="arrowpink" src="images/top-right.png"></h2>
+                </div>
+              </div>
+              <div class="modal fade" id="LogicModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content-dark">
+                    <div class="modal-header">
+                      <h3 class="modal-title projecttitleinpopup" id="exampleModalLongTitle">Logic</h3>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-md-9">
+                          <h4 >Background</h4>
+                            <span class="descriptions-dark">
+                              "Word Logic Quest" is a brain-teasing game where you unravel the secret logic behind each word to progress through 20 exciting levels. With Unity and C#, we've crafted an engaging experience that challenges your mind and boosts your vocabulary. Can you crack the code and conquer every level?
+                            </span>
+
+                            <h4>Link to App</h4>
+                            <span>
+                              <a class="descriptions-dark projecttitle" target="_blank" href="https://teknack.itch.io/logic-the-word-game">Logic</a></span>
+                            <h4>Code</h4>
+                            <a class="descriptions-dark projecttitle" target="_blank" href="https://github.com/mansayyy/Logic">Github Link</a></span>
+                            </div>
+                        <div class="col-md-3">
+                          <h4>Tools and Tech</h4>
+                          <ul class="descriptions-dark">
+                            <li>Unity</li>
+                            <li>C#</li>
+                            <li>UI/UX</li>
+                          </ul>
+                        </div>
+                      </div>
+                      
+
+                      
+
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row projectrow">
+              <div class="col-md-4" data-toggle="modal" data-target="#NSSWebsite">
+                <div class="websitecard-dark shadow">
+                  <img class="websiteimg" src="images/NSSWebsite.png"/>
+                  <span class="projecttitle">WEBSITE</span>
+                  <h2>NSS Website <img class="arrowpink" src="images/top-right.png"></h2>
+                </div>
+              </div>
+              <div class="modal fade" id="NSSWebsite" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content-dark">
+                    <div class="modal-header">
+                      <h3 class="modal-title projecttitleinpopup" id="exampleModalLongTitle">National Service Scheme Mumbai</h3>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-md-9">
+                          <h4 >Background</h4>
+                            <span class="descriptions-dark">
+                                I redesigned and developed a website for the National Service Scheme (NSS) Mumbai, an organization under the Government of India, with the aim of showcasing their activities to a global audience. The project involved a complete overhaul and reconstruction of the website using WordPress, a popular content management system. Through this initiative, the NSS Mumbai gained a modern and user-friendly platform to effectively communicate their initiatives and engage with the community at large.
+                            </span>
+
+                            <h4>Link to Website</h4>
+                            <span>
+                              <a class="descriptions-dark projecttitle" target="_blank" href="https://nssmu.in/">NSS</a></span>
+                          </div>
+                        <div class="col-md-3">
+                          <h4>Tools and Tech</h4>
+                          <ul class="descriptions-dark">
+                            <li>WordPress</li>
+                          </ul>
+                        </div>
+                      </div>
+                      
+
+                      
+
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4" data-toggle="modal" data-target="#DomainWebsite">
+                <div class="websitecard-dark shadow">
+                  <img class="websiteimg" src="images/DomainWebsite.png"/>
+                  <span class="projecttitle">WEBSITE</span>
+                  <h2>Domain Website <img class="arrowpink" src="images/top-right.png"></h2>
+                </div>
+              </div>
+              <div class="modal fade" id="DomainWebsite" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content-dark">
+                    <div class="modal-header">
+                      <h3 class="modal-title projecttitleinpopup" id="exampleModalLongTitle">Domain Website</h3>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-md-9">
+                          <h4 >Background</h4>
+                            <span class="descriptions-dark">
+                                Crafted a dynamic website for the college's Mathematics Club, leveraging a blend of HTML, CSS, Bootstrap, and JavaScript to ensure an engaging and responsive user experience. Implemented PHP functionalities to seamlessly handle form submissions and enhance interactivity. This project not only showcased my proficiency in web development technologies but also demonstrated my ability to create customized solutions tailored to meet specific organizational needs.
+                            </span>
+
+                            <h4>Link to Website</h4>
+                            <span>
+                              <a class="descriptions-dark projecttitle" target="_blank" href="https://rutvij-patil24.github.io/domain-website-bootstrap/">Domain</a></span>
                             
-                                
-                            </div>
-                          <div class="col-md-3">
-                            <h4>Tools and Tech</h4>
-                            <ul class="descriptions">
-                              <li>PHP</li>
-                              <li>HTML</li>
-                              <li>JavaScript</li>
-
-                              <li>Bootstrap</li>
-                              <li>CSS</li>
-                            </ul>
+                            <h4>Code</h4>
+                            <span>
+                              <a class="descriptions-dark projecttitle" target="_blank" href="https://github.com/rutvij-patil24/domain-website-bootstrap  ">Github Code</a></span>
+                          
+                              
                           </div>
+                        <div class="col-md-3">
+                          <h4>Tools and Tech</h4>
+                          <ul class="descriptions-dark">
+                            <li>PHP</li>
+                            <li>HTML</li>
+                            <li>JavaScript</li>
+
+                            <li>Bootstrap</li>
+                            <li>CSS</li>
+                          </ul>
                         </div>
-                        
-
-                        
-
                       </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      </div>
+                      
+
+                      
+
                     </div>
-                  </div>
-                </div>
-                <div class="col-md-4" data-toggle="modal" data-target="#BlockerApp">
-                  <div class="websitecard shadow">
-                    <img class="websiteimg" src="images/BlockerApp.png"/>
-                    <span class="projecttitle">APPLICATION / GAME</span>
-                    <h2>Blocker<img class="arrowpink" src="images/top-right.png"></h2>
-                  </div>
-                </div>
-                <div class="modal fade" id="BlockerApp" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h3 class="modal-title projecttitleinpopup" id="exampleModalLongTitle">Blocker</h3>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <div class="row">
-                          <div class="col-md-9">
-                            <h4 >Background</h4>
-                              <span class="descriptions">
-                                Created an immersive endless game using Unity and C#, challenging players to navigate a perilous environment while avoiding alien attacks and UFO threats. Achieved an average rating of 4.9 on PlayStore and surpassed 100 downloads, demonstrating the game's popularity and appeal. Leveraged strong coding skills to implement dynamic gameplay mechanics and optimize user experience.
-                              </span>
-
-                              <h4>Link to App</h4>
-                              <span>
-                                <a class="descriptions projecttitle" target="_blank" href="https://play.google.com/store/apps/details?id=com.Teknack.Blocker">Blocker</a></span>
-                        
-                                
-                            </div>
-                          <div class="col-md-3">
-                            <h4>Tools and Tech</h4>
-                            <ul class="descriptions">
-                              <li>Unity</li>
-                              <li>C#</li>
-                              <li>UI/UX</li>
-                            </ul>
-                          </div>
-                        </div>
-                        
-
-                        
-
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="row projectrow">
-                <div class="col-md-4" data-toggle="modal" data-target="#JetChat">
-                  <div class="websitecard shadow">
-                    <img class="websiteimg" src="images/jetchat.png"/>
-                    <span class="projecttitle">APPLICATION</span>
-                    <h2>JetChat <img class="arrowpink" src="images/top-right.png"></h2>
-                  </div>
+              <div class="col-md-4" data-toggle="modal" data-target="#BlockerApp">
+                <div class="websitecard-dark shadow">
+                  <img class="websiteimg" src="images/BlockerApp.png"/>
+                  <span class="projecttitle">APPLICATION / GAME</span>
+                  <h2>Blocker<img class="arrowpink" src="images/top-right.png"></h2>
                 </div>
-                <div class="modal fade" id="JetChat" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h3 class="modal-title projecttitleinpopup" id="exampleModalLongTitle">JetChat</h3>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <div class="row">
-                          <div class="col-md-9">
-                            <h4 >Background</h4>
-                              <span class="descriptions">
-                                JetChat is an application that helps people to interact with each other online with a very simple and easy-to-use interface. With its features like real-time updates, 1v1 chatting, easy registrations, JetChat is an application that perfectly satisfies every user’s communication needs. People can live chat with anybody, anywhere without sharing their phone number.
-                              </span>
-                              <h4>Link</h4>
-                              <span>
-                                <a class="descriptions projecttitle" target="_blank" href="https://grejojoby.itch.io/jetchat">JetChat</a></span>
-                           
+              </div>
+              <div class="modal fade" id="BlockerApp" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content-dark">
+                    <div class="modal-header">
+                      <h3 class="modal-title projecttitleinpopup" id="exampleModalLongTitle">Blocker</h3>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-md-9">
+                          <h4 >Background</h4>
+                            <span class="descriptions-dark">
+                              Created an immersive endless game using Unity and C#, challenging players to navigate a perilous environment while avoiding alien attacks and UFO threats. Achieved an average rating of 4.9 on PlayStore and surpassed 100 downloads, demonstrating the game's popularity and appeal. Leveraged strong coding skills to implement dynamic gameplay mechanics and optimize user experience.
+                            </span>
+
+                            <h4>Link to App</h4>
+                            <span>
+                              <a class="descriptions-dark projecttitle" target="_blank" href="https://play.google.com/store/apps/details?id=com.Teknack.Blocker">Blocker</a></span>
+                      
                               
-                              <h4>Video</h4>
-                              <span>
-                                <a class="descriptions projecttitle"  target="_blank" href="https://www.youtube.com/watch?v=KLkpoMCgYqI">YouTube Link</a></span>
-                            </div>
-                          <div class="col-md-3">
-                            <h4>Tools and Tech</h4>
-                            <ul class="descriptions">
-                              <li>React Native</li>
-                              <li>Firebase</li>
-                              <li>Expo</li>
-                              <li>Android Development</li>
-                            </ul>
                           </div>
+                        <div class="col-md-3">
+                          <h4>Tools and Tech</h4>
+                          <ul class="descriptions-dark">
+                            <li>Unity</li>
+                            <li>C#</li>
+                            <li>UI/UX</li>
+                          </ul>
                         </div>
-                        
-
-                        
-
                       </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      </div>
+                      
+
+                      
+
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </div>
                   </div>
                 </div>
-
-                <div class="col-md-4" data-toggle="modal" data-target="#JobApp">
-                  <div class="websitecard shadow">
-                    <img class="websiteimg" src="images/jobApp.png"/>
-                    <span class="projecttitle">APPLICATION</span>
-                    <h2>Job App <img class="arrowpink" src="images/top-right.png"></h2>
-                  </div>
+              </div>
+            </div>
+            <div class="row projectrow">
+              <div class="col-md-4" data-toggle="modal" data-target="#JetChat">
+                <div class="websitecard-dark shadow">
+                  <img class="websiteimg" src="images/jetchat.png"/>
+                  <span class="projecttitle">APPLICATION</span>
+                  <h2>JetChat <img class="arrowpink" src="images/top-right.png"></h2>
                 </div>
-                <div class="modal fade" id="JobApp" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h3 class="modal-title projecttitleinpopup" id="exampleModalLongTitle">Job App</h3>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <div class="row">
-                          <div class="col-md-9">
-                            <h4 >Background</h4>
-                              <span class="descriptions">
-                                Job App is a social networking platform designed to facilitate connections between users and provide insights into the job application process. With Job App, users can create profiles, connect with friends, and share information about their job applications. Whether you're seeking advice, networking opportunities, or simply want to stay updated on your friends' career journeys, Job App has you covered.
-                              </span>
-                              <h4>Link</h4>
-                              <span>
-                                <a class="descriptions projecttitle" target="_blank" href="http://198.58.107.253">Job App</a></span>
-                           
-                              
-                              <h4>Code</h4>
-                              <span>
-                                <a class="descriptions projecttitle"  target="_blank" href="https://github.com/mansayyy/FlaskApp---Job-Applications">Github Repository</a></span>
-                            </div>
-                          <div class="col-md-3">
-                            <h4>Tools and Tech</h4>
-                            <ul class="descriptions">
-                              <li>Flask</li>
-                              <li>MySQL</li>
-                              <li>SQLAlchemy</li>
-                              <li>Linode</li>
-                              <li>Python</li>
-                              <li>HTML/CSS</li>
-                            </ul>
+              </div>
+              <div class="modal fade" id="JetChat" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content-dark">
+                    <div class="modal-header">
+                      <h3 class="modal-title projecttitleinpopup" id="exampleModalLongTitle">JetChat</h3>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-md-9">
+                          <h4 >Background</h4>
+                            <span class="descriptions-dark">
+                              JetChat is an application that helps people to interact with each other online with a very simple and easy-to-use interface. With its features like real-time updates, 1v1 chatting, easy registrations, JetChat is an application that perfectly satisfies every user’s communication needs. People can live chat with anybody, anywhere without sharing their phone number.
+                            </span>
+                            <h4>Link</h4>
+                            <span>
+                              <a class="descriptions-dark projecttitle" target="_blank" href="https://grejojoby.itch.io/jetchat">JetChat</a></span>
+                         
+                            
+                            <h4>Video</h4>
+                            <span>
+                              <a class="descriptions-dark projecttitle"  target="_blank" href="https://www.youtube.com/watch?v=KLkpoMCgYqI">YouTube Link</a></span>
                           </div>
+                        <div class="col-md-3">
+                          <h4>Tools and Tech</h4>
+                          <ul class="descriptions-dark">
+                            <li>React Native</li>
+                            <li>Firebase</li>
+                            <li>Expo</li>
+                            <li>Android Development</li>
+                          </ul>
                         </div>
-                        
-
-                        
-
                       </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      </div>
+                      
+
+                      
+
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </div>
                   </div>
                 </div>
+              </div>
 
+              <div class="col-md-4" data-toggle="modal" data-target="#JobApp">
+                <div class="websitecard-dark shadow">
+                  <img class="websiteimg" src="images/jobApp.png"/>
+                  <span class="projecttitle">APPLICATION</span>
+                  <h2>Job App <img class="arrowpink" src="images/top-right.png"></h2>
+                </div>
+              </div>
+              <div class="modal fade" id="JobApp" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content-dark">
+                    <div class="modal-header">
+                      <h3 class="modal-title projecttitleinpopup" id="exampleModalLongTitle">Job App</h3>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-md-9">
+                          <h4 >Background</h4>
+                            <span class="descriptions-dark">
+                              Job App is a social networking platform designed to facilitate connections between users and provide insights into the job application process. With Job App, users can create profiles, connect with friends, and share information about their job applications. Whether you're seeking advice, networking opportunities, or simply want to stay updated on your friends' career journeys, Job App has you covered.
+                            </span>
+                            <h4>Link</h4>
+                            <span>
+                              <a class="descriptions-dark projecttitle" target="_blank" href="http://198.58.107.253">Job App</a></span>
+                         
+                            
+                            <h4>Code</h4>
+                            <span>
+                              <a class="descriptions-dark projecttitle"  target="_blank" href="https://github.com/mansayyy/FlaskApp---Job-Applications">Github Repository</a></span>
+                          </div>
+                        <div class="col-md-3">
+                          <h4>Tools and Tech</h4>
+                          <ul class="descriptions-dark">
+                            <li>Flask</li>
+                            <li>MySQL</li>
+                            <li>SQLAlchemy</li>
+                            <li>Linode</li>
+                            <li>Python</li>
+                            <li>HTML/CSS</li>
+                          </ul>
+                        </div>
+                      </div>
+                      
+
+                      
+
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        
+        <hr class="linebreak">
+
+          <div class="secondsection-dark"id="experience">
+            <h1 class="sectiontitle-dark"> My Experience </h1>
+
+            <div class="timeline">
+              <div class="container companycont leftcont">
+                <img src="images/newmontlogo.jpeg" alt="">
+                <div class="text-box-dark shadow">
+                  <h2 class="companyname">Newmont Mining Corporation</h2>
+                  <small class="companyjd">May 2023-Present</small>
+                  <p class="companyjd">
+                    I utilized Microsoft Power Platform tools including Power BI, Power Apps, Power Automate, and Power Virtual Agents to optimize data analytics, automate manual processes, and bolster IT operations, resulting in marked improvements in efficiency and accuracy. My responsibilities spanned crafting dynamic dashboards, automating data extraction, developing user-friendly chatbots, and facilitating comprehensive Microsoft Teams training, highlighting my multifaceted skill set and significant contributions to various projects.</p>
+                    <div class="badge">PowerBI</div><div class="badge">Power Automate</div> <div class="badge">Power Apps</div><div class="badge">ServiceNow</div><div class="badge">Power Virtual Agents</div><div class="badge">SAP</div>
+                    <span class="leftcontarrow"></span> 
+                </div>
+              </div>
+              <div class="container companycont rightcont">
+                <img src="images/dsllogo.png" alt="">
+                <div class="text-box-dark shadow">
+                  <h2 class="companyname">Edplus, ASU</h2>
+                  <small class="companyjd">Feb 2023 - Present </small>
+                  <p class="companyjd">
+                    I spearheaded an educational transformation by developing immersive VR experiences using Unity and C#, resulting in a remarkable 40% increase in student grades. Additionally, I exercised precise project management skills by orchestrating tasks within Jira and ensured version control integrity through Bitbucket and Git. Furthermore, I engineered automations to track student data, reducing manual updating time by 68%, and created captivating dashboards with Google Looker Studio, leveraging AWS Lambda functions for data visualization from S3 buckets.</p>
+                    <div class="badge">Python</div><div class="badge">Looker Studio</div> <div class="badge">C#</div><div class="badge">Unity</div><div class="badge"> Salesforce </div><div class="badge">AWS</div><div class="badge">Bitbucket</div><div class="badge">Jira</div>
+                    <span class="rightcontarrow"></span>
+                </div>
+              </div>
+              <div class="container companycont leftcont">
+                <img src="images/fdlogo.jpeg" alt="">
+                <div class="text-box-dark">
+                  <h2 class="companyname">Fields Data</h2>
+                  <small class="companyjd">May 2021 - June 2022</small>
+                  <p class="companyjd">
+                    As a Data Analyst at United Nations Operations Iraq, I utilized Power BI to analyze a dataset of 16,000 calls per month, improving the call center system by 60% through data mapping and database standardization. Additionally, I designed and developed a working website using Figma for designing and ReactJs, HTML, CSS, and Javascript for development. I executed SEO strategies, increased visitor count by 140% within a month, and was responsible for maintenance and user tracking using Google Analytics.</p>
+                    <div class="badge">Tableau</div><div class="badge">Looker Studio</div> <div class="badge">Python</div><div class="badge">JavaScript</div><div class="badge"> SEO </div><div class="badge">HTML</div><div class="badge">CSS</div>
+                   
+                    <span class="leftcontarrow"></span>
+                </div>
               </div>
             </div>
           </div>
 
-          
           <hr class="linebreak">
 
-            <div class="secondsection"id="experience">
-              <h1> My Experience </h1>
+          <div class="secondsection-dark" id="blogs">
+            <h1 class="sectiontitle-dark"> My Blogs </h1>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <a class="noformatlink" href="https://medium.com/@manasi_31636/machine-learning-not-rocket-science-5ba06b288387" target="_blank">
 
-              <div class="timeline">
-                <div class="container companycont leftcont">
-                  <img src="images/newmontlogo.jpeg" alt="">
-                  <div class="text-box shadow">
-                    <h2 class="companyname">Newmont Mining Corporation</h2>
-                    <small class="companyjd">May 2023-Present</small>
-                    <p class="companyjd">
-                      I utilized Microsoft Power Platform tools including Power BI, Power Apps, Power Automate, and Power Virtual Agents to optimize data analytics, automate manual processes, and bolster IT operations, resulting in marked improvements in efficiency and accuracy. My responsibilities spanned crafting dynamic dashboards, automating data extraction, developing user-friendly chatbots, and facilitating comprehensive Microsoft Teams training, highlighting my multifaceted skill set and significant contributions to various projects.</p>
-                      <div class="badge">PowerBI</div><div class="badge">Power Automate</div> <div class="badge">Power Apps</div><div class="badge">ServiceNow</div><div class="badge">Power Virtual Agents</div><div class="badge">SAP</div>
-                      <span class="leftcontarrow"></span> 
-                  </div>
-                </div>
-                <div class="container companycont rightcont">
-                  <img src="images/dsllogo.png" alt="">
-                  <div class="text-box shadow">
-                    <h2 class="companyname">Edplus, ASU</h2>
-                    <small class="companyjd">Feb 2023 - Present </small>
-                    <p class="companyjd">
-                      I spearheaded an educational transformation by developing immersive VR experiences using Unity and C#, resulting in a remarkable 40% increase in student grades. Additionally, I exercised precise project management skills by orchestrating tasks within Jira and ensured version control integrity through Bitbucket and Git. Furthermore, I engineered automations to track student data, reducing manual updating time by 68%, and created captivating dashboards with Google Looker Studio, leveraging AWS Lambda functions for data visualization from S3 buckets.</p>
-                      <div class="badge">Python</div><div class="badge">Looker Studio</div> <div class="badge">C#</div><div class="badge">Unity</div><div class="badge"> Salesforce </div><div class="badge">AWS</div><div class="badge">Bitbucket</div><div class="badge">Jira</div>
-                      <span class="rightcontarrow"></span>
-                  </div>
-                </div>
-                <div class="container companycont leftcont">
-                  <img src="images/fdlogo.jpeg" alt="">
-                  <div class="text-box">
-                    <h2 class="companyname">Fields Data</h2>
-                    <small class="companyjd">May 2021 - June 2022</small>
-                    <p class="companyjd">
-                      As a Data Analyst at United Nations Operations Iraq, I utilized Power BI to analyze a dataset of 16,000 calls per month, improving the call center system by 60% through data mapping and database standardization. Additionally, I designed and developed a working website using Figma for designing and ReactJs, HTML, CSS, and Javascript for development. I executed SEO strategies, increased visitor count by 140% within a month, and was responsible for maintenance and user tracking using Google Analytics.</p>
-                      <div class="badge">Tableau</div><div class="badge">Looker Studio</div> <div class="badge">Python</div><div class="badge">JavaScript</div><div class="badge"> SEO </div><div class="badge">HTML</div><div class="badge">CSS</div>
-                     
-                      <span class="leftcontarrow"></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <hr class="linebreak">
-
-            <div class="secondsection" id="blogs">
-              <h1> My Blogs </h1>
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-4">
-                    <a class="noformatlink" href="https://medium.com/@manasi_31636/machine-learning-not-rocket-science-5ba06b288387" target="_blank">
-
-                      <div class="card blogcard h-100 shadow">
-                        <img src="images/blog1.webp" class="blogimg" alt="">
-                        <h2 class="blogtitle">Machine Learning - Not Rocket Science <img class="arrowpink" src="images/top-right.png">  </h2>
-                        
-                      </div>
-                    </a>
-                    
-                  </div>
-                  <div class="col-md-4">
-                    <a class="noformatlink"  href="https://medium.com/@manasi_31636/web-development-the-chamber-of-secrets-ee6a7f6db4c8" target="_blank">
-
-                    <div class="card blogcard h-100 shadow">
-                      <img src="images/blog2.webp" class="blogimg" alt="">
-                      <h2 class="blogtitle">Web Development - The Chamber of Secrets <img class="arrowpink" src="images/top-right.png">  </h2>
+                    <div class="card blogcard-dark h-100 shadow">
+                      <img src="images/blog1.webp" class="blogimg" alt="">
+                      <h2 class="blogtitle">Machine Learning - Not Rocket Science <img class="arrowpink" src="images/top-right.png">  </h2>
+                      
                     </div>
-                    </a>
-                  </div>
-                  <div class="col-md-4">
-                    <a class="noformatlink" href="https://medium.com/@manasi_31636/the-website-race-32a1f1604290" target="_blank">
+                  </a>
+                  
+                </div>
+                <div class="col-md-4">
+                  <a class="noformatlink"  href="https://medium.com/@manasi_31636/web-development-the-chamber-of-secrets-ee6a7f6db4c8" target="_blank">
 
-                      <div class="card blogcard h-100 shadow">
-                        <img src="images/blog3.webp" class="blogimg" alt="">
-                        <h2 class="blogtitle">  The Website Race <img class="arrowpink" src="images/top-right.png"> </h2>
-                      </div>
-                    </a>
+                  <div class="card blogcard-dark h-100 shadow">
+                    <img src="images/blog2.webp" class="blogimg" alt="">
+                    <h2 class="blogtitle">Web Development - The Chamber of Secrets <img class="arrowpink" src="images/top-right.png">  </h2>
                   </div>
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a class="noformatlink" href="https://medium.com/@manasi_31636/the-website-race-32a1f1604290" target="_blank">
+
+                    <div class="card blogcard-dark h-100 shadow">
+                      <img src="images/blog3.webp" class="blogimg" alt="">
+                      <h2 class="blogtitle">  The Website Race <img class="arrowpink" src="images/top-right.png"> </h2>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
+          </div>
 
-            <hr class="linebreak">
+          <hr class="linebreak">
 
-            <div class="secondsection" id="certifications">
-              <h1> My Certifications </h1>
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-4">
-                    <div class="card certificatecard">
+          <div class="secondsection-dark" id="certifications">
+            <h1 class="sectiontitle-dark"> My Certifications </h1>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card certificatecard-dark">
+                    <div>
                       <div>
-                        <div>
-                          <img class="skilllogo" src="images/certificate.png"/>
-                          <h2 class="skilltitle">Scrum Fundamentals</h2>
-                          <span class="certtitle">SCRUMStudy - Accreditation body for Scrum and Agile <br> </span>
-                          <span class="certificatedate">April 2021</span>
-                        </div>
-                        
+                        <img class="skilllogo" src="images/certificate.png"/>
+                        <h2 class="skilltitle">Scrum Fundamentals</h2>
+                        <span class="certtitle">SCRUMStudy - Accreditation body for Scrum and Agile <br> </span>
+                        <span class="certificatedate">April 2021</span>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card certificatecard-dark">
+                    <div>
+                      <div>
+                        <img class="skilllogo" src="images/certificate.png"/>
+                        <h2 class="skilltitle">Amazon Web Services</h2>
+                        <span class="certtitle">AutoDice <br> </span>
+                        <span class="certificatedate">February 2020</span>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card certificatecard-dark">
+                    <div>
+                      <div>
+                        <img class="skilllogo" src="images/certificate.png"/>
+                        <h2 class="skilltitle"> Python Bootcamp</h2>
+                        <span class="certtitle"> Udemy <br> </span>
+                        <span class="certificatedate">February 2020</span>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+       
+          <hr class="linebreak">
+
+          <div class="secondsection-dark" id="contact">
+            <h1 class="sectiontitle-dark"> Contact Me </h1>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="card contactmecard-dark shadow h-100">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <img class="contactmelogo" src="images/location.png"/>
+                      </div>
+                      <div class="col-md-9">
+                        <span class="contacttitle">My Address <br></span>
+                        <span>Tempe, Arizona, United States.</span>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4">
-                    <div class="card certificatecard">
-                      <div>
-                        <div>
-                          <img class="skilllogo" src="images/certificate.png"/>
-                          <h2 class="skilltitle">Amazon Web Services</h2>
-                          <span class="certtitle">AutoDice <br> </span>
-                          <span class="certificatedate">February 2020</span>
+                </div>
+                <div class="col-md-6">
+                  <div class="card contactmecard-dark shadow h-100">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <img class="contactmelogo" src="images/social-media.png"/>
+                      </div>
+                      <div class="col-md-9">
+                        <span class="contacttitle">Social Media Links <br></span>
+                        <span>
+                          <div class="row">
+                            <div class="col-md-2 card logocard-dark">
+                              <a class="card" target="_blank" href="https://www.linkedin.com/in/manasi-anantpurkar">
+                                <img class = "bottomlogo" src="images/linkedin1.png">
+                              </a>
+                            </div>
+                            <div class="col-md-2 card logocard-dark">
+                              <a class="card" target="_blank" href="">
+                                <img class = "bottomlogo" src="images/instagram1.png">
+                              </a>
+                            </div>
+                            <div class="col-md-2 card logocard-dark">
+                              <a class="card" target="_blank" href="mailto:manasianantpurkar@gmail.com" >
+                                <img class = "bottomlogo" src="images/email.png">
+                              </a>
+                            </div>
+                          
                         </div>
-                        
+                        </span>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4">
-                    <div class="card certificatecard">
-                      <div>
-                        <div>
-                          <img class="skilllogo" src="images/certificate.png"/>
-                          <h2 class="skilltitle"> Python Bootcamp</h2>
-                          <span class="certtitle"> Udemy <br> </span>
-                          <span class="certificatedate">February 2020</span>
-                        </div>
-                        
+                </div>
+              </div>
+
+              <div class="row" style="margin-top: 10px;">
+                <div class="col-md-6">
+                  <div class="card contactmecard-dark shadow">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <img class="contactmelogo" src="images/mail1.png"/>
+                      </div>
+                      <div class="col-md-9">
+                        <span class="contacttitle">My Mail <br></span>
+                        <span><a href="mailto:manasianantpurkar@gmail.com">manasianantpurkar@gmail.com</a></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card contactmecard-dark shadow">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <img class="contactmelogo" src="images/website.png"/>
+                      </div>
+                      <div class="col-md-9">
+                        <span class="contacttitle">My Website <br></span>
+                        <span><a href="https://mansayyy.github.io/Manasi-Anantpurkar/"> Manasi Anantpurkar </a></span>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-         
-            <hr class="linebreak">
-
-            <div class="secondsection" id="contact">
-              <h1> Contact Me </h1>
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="card contactmecard shadow h-100">
-                      <div class="row">
-                        <div class="col-md-3">
-                          <img class="contactmelogo" src="images/location.png"/>
-                        </div>
-                        <div class="col-md-9">
-                          <span class="contacttitle">My Address <br></span>
-                          <span>Tempe, Arizona, United States.</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="card contactmecard shadow h-100">
-                      <div class="row">
-                        <div class="col-md-3">
-                          <img class="contactmelogo" src="images/social-media.png"/>
-                        </div>
-                        <div class="col-md-9">
-                          <span class="contacttitle">Social Media Links <br></span>
-                          <span>
-                            <div class="row">
-                              <div class="col-md-2 card logocard">
-                                <a class="card" target="_blank" href="https://www.linkedin.com/in/manasi-anantpurkar">
-                                  <img class = "bottomlogo" src="images/linkedin1.png">
-                                </a>
-                              </div>
-                              <div class="col-md-2 card logocard">
-                                <a class="card" target="_blank" href="">
-                                  <img class = "bottomlogo" src="images/instagram1.png">
-                                </a>
-                              </div>
-                              <div class="col-md-2 card logocard">
-                                <a class="card" target="_blank" href="mailto:manasianantpurkar@gmail.com" >
-                                  <img class = "bottomlogo" src="images/email.png">
-                                </a>
-                              </div>
-                            
-                          </div>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row" style="margin-top: 10px;">
-                  <div class="col-md-6">
-                    <div class="card contactmecard shadow">
-                      <div class="row">
-                        <div class="col-md-3">
-                          <img class="contactmelogo" src="images/mail1.png"/>
-                        </div>
-                        <div class="col-md-9">
-                          <span class="contacttitle">My Mail <br></span>
-                          <span><a href="mailto:manasianantpurkar@gmail.com">manasianantpurkar@gmail.com</a></span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="card contactmecard shadow">
-                      <div class="row">
-                        <div class="col-md-3">
-                          <img class="contactmelogo" src="images/website.png"/>
-                        </div>
-                        <div class="col-md-9">
-                          <span class="contacttitle">My Website <br></span>
-                          <span><a href="https://mansayyy.github.io/Manasi-Anantpurkar/"> Manasi Anantpurkar </a></span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
+          </div>
+        </div>
+          
+      
           <script>
             // function([string1, string2],target id,[color1,color2])    
-            consoleText(['Data Analyst', 'Software Developer', 'Automation Developer'], 'roletext',['black']);
+
+            
+            consoleText(['Data Analyst', 'Software Developer', 'Automation Developer'], 'roletext-dark',['white']);
 
             function consoleText(words, id, colors) {
               if (colors === undefined) colors = ['#fff'];
@@ -860,9 +1675,23 @@
                 }
               }, 60)
             }
+        
+            function toggleDivs() {
+              var div1 = document.getElementById('lightdiv');
+              var div2 = document.getElementById('darkdiv');
+
+              if (div1.classList.contains('hidden')) {
+                div1.classList.remove('hidden');
+                div2.classList.add('hidden');
+              } else {
+                div1.classList.add('hidden');
+                div2.classList.remove('hidden');
+              }
+}
+        
         </script>
 
-         <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.bundle.min.js'></script>
-
+        
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.bundle.min.js'></script>
     </body>
 </html>
