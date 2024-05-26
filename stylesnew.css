@@ -32,6 +32,15 @@
     color: #3c3e41;
 }
 
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,0,79, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  
+ .navbar-toggler {
+    border-color: rgb(255,0,79);
+  } 
+
 body{
     max-width: 100%;
     overflow-x: hidden;
@@ -45,7 +54,7 @@ body{
 }
 
 .pink-title{
-    color: #ff004f;
+    color: rgb(255, 0, 79);
     font-size: 48px;
     font-family: "Montserrat", sans-serif;
 }
@@ -289,6 +298,7 @@ color: #fff;
     margin: 0;
     max-width: 100%;
     min-width: 100%;
+    pointer-events: all;
 }
 .modal-dialog-centered{
     width: 100%;
